@@ -1,0 +1,18 @@
+---
+import { GITHUB, LINKEDIN, PRINTABLES } from "../consts";
+---
+
+<footer class="mt-6 flex items-center justify-end" transition:name="footer">
+  <nav class="flex items-center gap-4">
+    <a href="/posts">blog</a>
+    <a href={`${GITHUB}`}>github</a>
+    <a href={`${LINKEDIN}`}>linkedin</a>
+    <a href={`${PRINTABLES}`}>printables</a>
+  </nav>
+</footer>
+
+<style>
+  a {
+    @apply font-medium text-zinc-500 hover:text-zinc-900 hover:underline dark:hover:text-zinc-100;
+  }
+</style>

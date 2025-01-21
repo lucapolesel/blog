@@ -1,9 +1,12 @@
 // Place any global data in this file.
 // You can import this data from anywhere in your site by using the `import` keyword.
 
-export const SITE_URL = "https://miniblog.nicholasly.com";
-export const SITE_TITLE = "Miniblog";
+export const SITE_URL = "https://lucapolesel.dev";
+export const SITE_TITLE = "Luca Polesel";
 export const SITE_DESCRIPTION =
-  "Miniblog is an opinionated and extremely minimal blogging template built with Astro and Tailwind CSS.";
+  "Just a Software Developer and Robot Programmer based in Italy.";
 
-export const EMAIL = "hello@nicholasly.com";
+export const EMAIL = "hi@lucapolesel.dev";
+export const GITHUB = "https://github.com/lucapolesel";
+export const LINKEDIN = "https://www.linkedin.com/in/lucapolesel";
+export const PRINTABLES = "https://www.printables.com/@lucapolesel_2209249";

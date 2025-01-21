@@ -1,19 +1,26 @@
 ---
-import { EMAIL } from "../consts";
+import { GITHUB } from "../consts";
 import ThemeToggle from "./ThemeToggle.astro";
 ---
 
 <header class="mb-6 flex items-center justify-between" transition:name="header">
   <nav class="flex items-center gap-4">
-    <a href="/"> home </a>
-    <a href="/posts"> posts </a>
-    <a href={`mailto:${EMAIL}`}>email</a>
+    <figure
+      class="h-8 w-8 overflow-hidden rounded-full bg-current shadow-[0_0_0_1px]"
+    >
+      <img
+        class="h-full w-full object-contain"
+        src={`${GITHUB}.png`}
+        alt="profile picture"
+      />
+    </figure>
+    <a href="/">Luca Polesel</a>
   </nav>
   <ThemeToggle />
 </header>
 
 <style>
   a {
-    @apply font-medium text-zinc-500 hover:text-zinc-900 hover:underline dark:hover:text-zinc-100;
+    @apply font-medium;
   }
 </style>
