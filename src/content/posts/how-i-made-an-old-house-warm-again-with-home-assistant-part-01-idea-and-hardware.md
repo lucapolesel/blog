@@ -4,8 +4,6 @@ description: "In this first chapter, I tackle my parents' poorly insulated home 
 date: "Jan 23 2025"
 ---
 
-# How I Made an Old House Warm Again with Home Assistant (Part 01) - The Idea and Hardware
-
 I've always wanted to start a blog and ramble about random hobbies I pick up because I find them cool on a Friday evening, or things I come across in my everyday life.
 
 I guess the time has finally come.
