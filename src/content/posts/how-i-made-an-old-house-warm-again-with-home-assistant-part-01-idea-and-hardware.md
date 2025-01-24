@@ -32,29 +32,29 @@ So, let's see.. Every room has at least one radiator, so I guess there's no othe
 
 Sure, we could simply turn on the heat for the entire floor and turn it off when all the rooms reach a certain temperature, but our house has another issue: bad thermal insulation (I know.. I don't know what to say). Because of this, some rooms get way colder than others based on many different factors.
 
-I've tested different brands: the cheap and noisy Tuya ones, the reasonable but kinda useless Sonoff TRVZB, and the cool, silent, but kinda expensive Danfoss Ally valves. At one point, my setup became quite messy.
+I've tested different brands: the cheap and noisy Tuya ones, the reasonable but kinda useless Sonoff TRVZB, and the silent, but kinda expensive Danfoss Ally valves. At one point, my setup became quite messy.
 
-I didn't spend much time with the Tuya valves because I found them too noisy for a bedroom, so I only got one. The [Sonoff TRVZB valves](www.amazon.it/dp/B0CFXY26H1) are pretty and relatively cheap, but they didn't provide any way to adjust their aperture/closure at the time (though they recently pushed a firmware update that allows you to set those parameters but we'll talk about that later). That's where the [Danfoss Ally valves](www.amazon.it/dp/B08DRCVDG4) shine: they're quiet, have built-in PID control that seems to work well enough in my case without needing additional automations, and they just work. Sure, they're a bit expensive, but I was able to grab five brand-new ones for €25 each on Subito.it, and there seem to be quite a few other sellers offering them at similar prices.
+I didn't spend much time with the Tuya valves because I found them too noisy for a bedroom, so I only got one. The [Sonoff TRVZB valves](https://www.amazon.it/dp/B0CFXY26H1) are pretty and relatively cheap, but they didn't provide any way to adjust their aperture/closure at the time (though they recently pushed a firmware update that allows you to set those parameters but we'll talk about that later). That's where the [Danfoss Ally valves](https://www.amazon.it/dp/B08DRCVDG4) shine: they're quiet, have built-in PID control that seems to work well enough in my case without needing additional automations, and they just work. Sure, they're a bit expensive, but I was able to grab five brand-new ones for €25 each on Subito.it, and there seem to be quite a few other sellers offering them at similar prices.
 
 I didn't like the idea of having to replace batteries, but they seem to last quite a while.
 
 Now that we've figured out how to control each radiator, we have to find a way to get the temperature of each room. Well.. there isn't really any other way out other than having a single thermometer per room. And we have so many options in this case but it all comes down to budget and your Zigbee setup (I'll talk about why later).
 
-Of course, I went with the "cheap" option (I'm joking but saving in this case is just too funny and cool) and grabbed a couple of Xiaomi LYWSD03MMC Bluetooth sensors off [AliExpress](https://aliexpress.com/item/1005005278684115.html) for like €5 each.
+Of course, I went with the "cheap" option and grabbed a couple of Xiaomi LYWSD03MMC Bluetooth sensors off [AliExpress](https://aliexpress.com/item/1005005278684115.html) for like €5 each.
 
 Wait.. Bluetooth? Weren't we going with Zigbee?
 
-Well, guess what? Those cheap Xiaomi sensors do support Zigbee under the hood, and some cool people built custom firmware for them to enable this protocol.
+Well, guess what? Those cheap Xiaomi sensors do support Zigbee under the hood, and some people built custom firmware for them to enable this protocol.
 
 The only issue they have is that the custom firmware only makes them operate at +2dB to save battery, so you need to set up your Zigbee "mesh" network properly to ensure they're always relatively close to a repeater or your Zigbee router.
 
-You can find a cool guide on how to convert them to Zigbee [here](https://smarthomescene.com/guides/convert-xiaomi-lywsd03mmc-from-bluetooth-to-zigbee/).
+You can find a guide on how to convert them to Zigbee [here](https://smarthomescene.com/guides/convert-xiaomi-lywsd03mmc-from-bluetooth-to-zigbee/).
 
 Another good option is the [SONOFF SNZB-02D](https://www.amazon.it/dp/B0BYZP8NK2). I've got two, and you won't have range issues with them, but they're quite expensive compared to the Xiaomi ones, as they go for around €16 on Amazon.
 
 Okay, the idea seems good, and the hardware is ready as well.. Wait, how do we turn on the pump?
 
-My setup for that is quite temporary right now, so I won't go into much detail, but I hacked a [SONOFF MINI R2 smart switch](www.amazon.it/dp/B08NBGQ6NC) to work as a dry relay switch. You have to open it up, cut some traces, and solder some stuff, so I won't suggest you do the same. It'll be replaced by a single Zigbee module later on, as described before.
+My setup for that is quite temporary right now, so I won't go into much detail, but I hacked a [SONOFF MINI R2 smart switch](https://www.amazon.it/dp/B08NBGQ6NC) to work as a dry relay switch. You have to open it up, cut some traces, and solder some stuff, so I won't suggest you do the same. It'll be replaced by a single Zigbee module later on, as described before.
 
 I guess everything is ready to warm the house up now. We just have to automate and connect everything together somehow, but it's better if we talk about that in another blog post.
 
