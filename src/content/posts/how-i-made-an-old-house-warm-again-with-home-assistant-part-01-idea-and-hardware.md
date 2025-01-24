@@ -40,7 +40,7 @@ I didn't like the idea of having to replace batteries, but they seem to last qui
 
 Now that we've figured out how to control each radiator, we have to find a way to get the temperature of each room. Well.. there isn't really any other way out other than having a single thermometer per room. And we have so many options in this case but it all comes down to budget and your Zigbee setup (I'll talk about why later).
 
-Of course, I went with the "cheap" option (I'm joking but saving in this case is just too funny and cool) and grabbed a couple of Xiaomi LYWSD03MMC Bluetooth sensors off AliExpress for like €5 each.
+Of course, I went with the "cheap" option (I'm joking but saving in this case is just too funny and cool) and grabbed a couple of Xiaomi LYWSD03MMC Bluetooth sensors off [AliExpress](https://aliexpress.com/item/1005005278684115.html) for like €5 each.
 
 Wait.. Bluetooth? Weren't we going with Zigbee?
 
